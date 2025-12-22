@@ -1,0 +1,242 @@
+
+.navbar {
+    background-color: orange;
+}
+
+.navbar ul {
+    font-size: 20px;
+    gap: 20px;
+    font-family: Merriweather;
+}
+
+/* HERO */
+.wellness-hero {
+  height: 320px;
+  background-image: url("image-wellness/run.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.wellness-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wellness-hero-overlay h1 {
+  font-size: 60px;
+  font-family: Merriweather, sans-serif;
+  font-weight: bold;
+}
+
+.wellness-hero-overlay p {
+  font-family: Playfair, sans-;
+  font-size: 38px;
+  max-width: 600px;
+}
+
+/* WELLNESS TIPS */
+.wellness-wrapper {
+  background: #fff2c2;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.wellness-card {
+  background: #ffe09c;
+  font-family: Merriweather, sans-serif;
+  border-radius: 16px;
+  padding: 25px;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wellness-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* FITNESS ROUTINES */
+.fitness-banner {
+  height: 320px;
+  background-image: url("image-wellness/shoe.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* 半透明遮罩 */
+.fitness-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* 暗一点字才清楚 */
+  color: white;
+  text-align: center;
+  font-family: Merriweather, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* WELLNESS CARD内容 */
+.wellness-detail-card {
+  font-family: Merriweather, sans-serif;
+  background-color: #ffe09c;
+  border-radius: 20px;
+  padding: 5px;
+  aspect-ratio: 1/1;
+  max-width: 393px;
+}
+
+.wellness-detail-card p {
+  font-family: Playfair, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* SUB NAV */
+.fitness-nav .nav-link {
+  font-family: Merriweather, sans-serif;
+  background: #ffe09c;
+  margin: 10px;
+  border-radius: 12px;
+  color: black;
+}
+
+/* FITNESS CONTENT */
+.fitness-content {
+  background: #ffd9a0;
+  border-radius: 24px;
+  margin: 10px;
+}
+
+.fitness-content h3 {
+  margin-top: 30x;
+  font-family: Merriweather, sans-serif;
+  font-size: 28px;
+}
+
+.fitness-content p {
+  margin-top: 30x;
+  font-family: Playfair, sans;
+  font-size: 20px;
+}
+
+/* START DAY */
+.start-day-section {
+  height: 380px;
+  background-image: url("image-wellness/yy.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 80px;
+}
+
+.start-day-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+
+  color: white;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.start-day-overlay h2 {
+  font-family: Merriweather, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.start-day-overlay ul {
+  font-family: Playfair, sans;
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+
+/* FOOTER */
+.footer{
+    background-color: #E88634;
+}
+
+.information{
+    margin: 20px 0 20px 40px
+}
+
+.information h1{
+    font-size: 25px
+}
+
+
+.Logo{
+    margin: 60px 0 40px 0;
+}
+
+.form-control{
+    width: 70%;
+}
+
+.send{
+    padding-right: 30%;
+}
+
+@media(min-width:992px){
+    .information h1{
+        font-size: 25px;
+    }
+    .information{
+        margin: 90px 0 0 100px;
+    }
+    .Logo{
+       width: 100%; 
+        margin: 60px 0 0 40px;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .message{
+        padding-left: 37%;
+    }
+}
+
+@media(min-width:762px){
+    .form-control{
+        width: 90%;
+    }
+    .send{
+        padding-right: 10%;
+    }
+}
+
+.footer h1,
+.section3 h1{
+    font-family: Merriweather;
+    font-weight: 600;
+}
+
+.footer p,
+.section3 p{
+    font-family: Playfair Display;
+    font-weight: 600;
+}

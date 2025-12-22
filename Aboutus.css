@@ -1,0 +1,144 @@
+.navbar{
+    background-color: orange;
+}
+
+.navbar ul{
+    font-size: 20px;
+    gap: 20px;
+    font-family: Merriweather;
+}
+
+body {
+  font-family: "Merriweather";
+}
+
+
+
+.about-text {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ================= BUTTON ================= */
+.meet-btn {
+  background-color: #ffa31a;
+  color: #000;
+  border: none;
+  padding: 12px 80px;
+  border-radius: 50px;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.meet-btn:hover {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+
+.footer{
+    background-color: #E88634;
+}
+
+.information{
+    margin: 20px 0 20px 40px
+}
+
+.information h1{
+    font-size: 25px
+}
+
+
+.Logo{
+    margin: 60px 0 40px 0;
+}
+
+.form-control{
+    width: 70%;
+}
+
+.send{
+    padding-right: 30%;
+}
+
+@media(min-width:992px){
+    .information h1{
+        font-size: 25px;
+    }
+    .information{
+        margin: 90px 0 0 100px;
+    }
+    .Logo{
+       width: 100%; 
+        margin: 60px 0 0 40px;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .message{
+        padding-left: 37%;
+    }
+}
+
+@media(min-width:762px){
+    .form-control{
+        width: 90%;
+    }
+    .send{
+        padding-right: 10%;
+    }
+}
+
+.footer h1,
+.section3 h1{
+    font-family: Merriweather;
+    font-weight: 600;
+}
+
+.footer p,
+.section3 p{
+    font-family: Playfair Display;
+    font-weight: 600;
+}
+
+/* ===================== NAVBAR FIX ===================== */
+
+.navbar {
+  background-color: orange;
+}
+
+/* menu 字体与间距 */
+.navbar ul {
+  font-size: 20px;
+  gap: 20px;
+  font-family: "Merriweather", serif;
+}
+
+/* menu 文字颜色 */
+.navbar .nav-link {
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+/* offcanvas 背景颜色 */
+.offcanvas-body,
+.offcanvas-header {
+  background-color: rgba(239, 174, 56, 0.62);
+}
+
+/* 修正 toggler icon 在橙色背景下可见 */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+

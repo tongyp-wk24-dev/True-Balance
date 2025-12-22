@@ -1,0 +1,120 @@
+.navbar {
+    background-color: orange;
+}
+
+.navbar ul {
+    font-size: 20px;
+    gap: 20px;
+    font-family: Merriweather;
+}
+
+.offcanvas-body,
+.offcanvas-header {
+    background-color: rgba(239, 174, 56, 0.62);
+}
+
+/*content*/
+.box{
+    width: 100%;
+}
+
+.text1{
+    margin: 10px 20px 40px 20px;
+    font-size: 18px;
+}
+
+@media (min-width: 762px) {
+    .text1{
+        margin: 40px 20px 20px 20px;
+    }
+    .mineral {
+    margin: 40px 20px 20px 0;
+    width: 100%;
+}
+}
+
+.foodsource{
+    object-fit: cover;
+    width: 700px;
+    height: 400px;
+    margin: 0 0 20px 10px;
+}
+
+.sentences{
+    margin: 0 10px 60px 20px;
+    font-size: 20px;
+}
+
+.text1 h1,
+.sentences h3{
+    font-family: Merriweather;
+    font-weight: 700;
+}
+
+.text1 p,
+.sentences p{
+    font-family: Playfair Display;
+    font-weight: 500;
+}
+
+/*Footer*/
+.footer{
+    background-color: #E88634;
+}
+
+.information{
+    margin: 20px 0 20px 40px
+}
+
+.information h1{
+    font-size: 25px
+}
+
+
+.Logo{
+    margin: 60px 0 40px 0;
+}
+
+.form-control{
+    width: 100%;
+}
+
+@media(min-width:992px){
+    .information h1{
+        font-size: 25px;
+    }
+    .information{
+        margin: 90px 0 0 100px;
+    }
+    .Logo{
+       width: 100%; 
+        margin: 60px 0 0 40px;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .message{
+        padding-left: 37%;
+    }
+}
+
+@media(min-width:762px){
+    .form-control{
+        width: 90%;
+    }
+    .send{
+        padding-right: 10%;
+    }
+}
+
+.footer h1,
+.section3 h1{
+    font-family: Merriweather;
+    font-weight: 600;
+}
+
+.footer p,
+.section3 p{
+    font-family: Playfair Display;
+    font-weight: 600;
+}

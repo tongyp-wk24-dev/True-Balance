@@ -1,0 +1,195 @@
+.navbar{
+    background-color: orange;
+    padding : 10px 20px;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    font-size: 20px;
+    gap: 20px;
+    font-family: Merriweather;
+}
+
+/* HERO */
+.expert-hero {
+  height: 320px;
+  background-image: url("image-wellness/expert.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.expert-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expert-hero-overlay h1 {
+  font-family: Merriweather, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* ===== EXPERT CARD ===== */
+.expert-card {
+background-color: #fde6b8;
+border-radius: 16px;
+padding: 24px;
+margin-bottom: 32px;
+margin: 10px;
+display: flex;
+gap: 24px;
+align-items: center;
+}
+.expert-img {
+width: 160px;
+height: 160px;
+border-radius: 8px;
+background: #ddd;
+object-fit: cover;
+}
+.expert-info h5 {
+  font-family: Merriweather, sans-serif;
+font-weight: bold;
+margin-bottom: 4px;
+}
+.expert-info p {
+  font-family: Playfair, sans;
+margin-bottom: 8px;
+font-size: 15px;
+}
+
+.expert-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Book a Session Button */
+.btn-book {
+  background-color: #ff914d;
+  font-family: playfair,sans;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 24px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-book:hover {
+  background-color: #e6762f;
+}
+
+/* Email + Button Row */
+.email-book-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+
+
+/* ===== MODAL ===== */
+.modal-dialog {
+  max-width: 520px;
+  margin: auto;
+}
+
+.modal-content {
+  background-color: #ffb86c;
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.modal-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 12px;
+  margin-bottom: 26px;
+}
+
+.modal-content button {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #E88634;
+}
+
+.information{
+    margin: 20px 0 20px 40px
+}
+
+.information h1{
+    font-size: 25px
+}
+
+
+.Logo{
+    margin: 60px 0 40px 0;
+}
+
+.form-control{
+    width: 70%;
+}
+
+.send{
+    padding-right: 30%;
+}
+
+@media(min-width:992px){
+    .information h1{
+        font-size: 25px;
+    }
+    .information{
+        margin: 90px 0 0 100px;
+    }
+    .Logo{
+       width: 100%; 
+        margin: 60px 0 0 40px;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .message{
+        padding-left: 37%;
+    }
+}
+
+@media(min-width:762px){
+    .form-control{
+        width: 90%;
+    }
+    .send{
+        padding-right: 10%;
+    }
+}
+
+.footer h1,
+.section3 h1{
+    font-family: Merriweather;
+    font-weight: 600;
+}
+
+.footer p,
+.section3 p{
+    font-family: Playfair Display;
+    font-weight: 600;
+}

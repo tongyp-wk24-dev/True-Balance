@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wellness Guides</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+            integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+            integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- Custom CSS -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="Wellness.css" />
+    </head>
+
+    <body>
+        <!-- ================= NAVIGATION BAR ================= -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <!--First column-->
+                    <div class="col-2 col-lg-4 col-md-2 order-md-2 d-block d-md-none d-flex align-items-center">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <!--Second column-->
+                    <div class="col-lg-8 col-md-10 order-3 d-flex justify-content-end d-flex align-items-center">
+                        <div
+                            class="offcanvas offcanvas-start"
+                            tabindex="-1"
+                            id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Aboutus.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="WellnessGuide.html"
+                                            >Wellness Guide</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Nutrition.html">Nutrition</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third column-->
+                    <div
+                        class="col-10 col-lg-4 col-md-2 order-md-1 d-flex justify-content-md-start justify-content-center align-items-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="image-wellness/Logo.png" height="70" width="90" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="wellness-hero">
+            <div class="wellness-hero-overlay">
+                <h1>Wellness Guides</h1>
+                <p>Your guide to balance, fitness, and mental well-being</p>
+            </div>
+        </section>
+
+        <!-- ================= WELLNESS TIPS ================= -->
+        <section class="container my-5">
+            <h2 class="fw-bold mb-4">Wellness Tips</h2>
+
+            <div class="wellness-wrapper p-4">
+                <div class="row g-4">
+                    <!-- 6 equal cards -->
+                    <div class="col-md-4">
+                        <div class="wellness-card" data-bs-toggle="modal" data-bs-target="#wellnessDetail1">
+                            ☀
+                            <h5>Morning Routine Tips</h5>
+                            <p>Gentle stretching and hydration</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wellness-card" data-bs-toggle="modal" data-bs-target="#energyBoost">
+                            ⚡️
+                            <h5>Energy Boosting Habits</h5>
+                            <p>Small breaks & mindful breathing</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wellness-card" data-bs-toggle="modal" data-bs-target="#mental">
+                            🧠
+                            <h5>Mental Wellness</h5>
+                            <p>Reduce stress during busy days</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wellness-card" data-bs-toggle="modal" data-bs-target="#sleep">
+                            🌙
+                            <h5>Sleep Wellness</h5>
+                            <p>Create a sleep-friendly environment</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wellness-card" data-bs-toggle="modal" data-bs-target="#healthy">
+                            🥗
+                            <h5>Healthy Eating Habits</h5>
+                            <p>Balance your meals daily</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wellness-card" data-bs-toggle="modal" data-bs-target="#hydration">
+                            💧
+                            <h5>Hydration Reminders</h5>
+                            <p>Support physical & mental health</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FITNESS IMAGE SECTION ================= -->
+        <section class="fitness-banner">
+            <div class="fitness-overlay">
+                <h2>Fitness Routines & Stress Management</h2>
+                <p>
+                    Improve your physical and mental well-being with structured exercises and stress-relief practices.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= SUB NAV BAR ================= -->
+        <div class="container my-4">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#beginner">Beginner Routines</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#strength">Strength Training</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#cardio">Cardio Workouts</a></li>
+                                    <li><a class="dropdown-item" href="#stress">Stress Relief Tehniques</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- ================= FITNESS CONTENT ================= -->
+        <section class="container my-5">
+            <div class="fitness-content p-5">
+                <div id="beginner">
+                    <h3>Beginner Routines</h3>
+                    <p>
+                        Beginner routines focus on building a strong foundation through simple, low-impact exercises.
+                        These workouts help new users improve mobility, coordination, and basic strength without
+                        overwhelming intensity. By starting with easy movements such as bodyweight squats, glute
+                        bridges, and light stretching, beginners can develop consistency and confidence. The goal is to
+                        establish healthy habits and prepare the body for more advanced training later on.
+                    </p>
+                </div>
+
+                <div id="strength">
+                    <h3>Strength Training</h3>
+                    <p>
+                        Strength training aims to increase muscle power, improve body composition, and enhance overall
+                        physical performance. Through controlled movements such as squats, push-ups, hip thrusts, and
+                        dumbbell rows, users can gradually challenge their muscles and boost metabolism. This type of
+                        routine is ideal for those who want to tone their body, build strength, and support long-term
+                        fitness. Consistent strength training also improves posture and joint stability.
+                    </p>
+                </div>
+
+                <div id="cardio">
+                    <h3>Cardio Workouts</h3>
+                    <p>
+                        Cardio workouts elevate heart rate, improve endurance, and support effective calorie burning.
+                        Activities like jumping jacks, fast stepping, and light jogging help increase stamina while
+                        promoting full-body movement. These sessions are great for users looking to enhance
+                        cardiovascular health or manage weight. With regular cardio practice, users can experience
+                        better energy levels, improved mood, and stronger heart function.
+                    </p>
+                </div>
+
+                <div id="stress">
+                    <h3>Stress Relief Techniques</h3>
+                    <p>
+                        Stress relief techniques help calm the mind and relax the body through a mix of breathing
+                        exercises, gentle stretching, and mindfulness. Simple practices such as deep breathing, neck and
+                        shoulder stretches, or short awareness check-ins can effectively reduce tension. These routines
+                        are ideal for users experiencing daily stress, anxiety, or sleep difficulties. By incorporating
+                        these techniques, individuals can improve emotional balance and overall well-being.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= START YOUR DAY IMAGE ================= -->
+        <section class="start-day-section">
+            <div class="start-day-overlay">
+                <h2>Start Your Day With Balance</h2>
+
+                <ul>
+                    <li>Simple morning stretches</li>
+                    <li>Mindful breathing exercises</li>
+                    <li>Hydration reminders</li>
+                    <li>Setting daily intentions</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <div class="footer">
+            <div class="container5">
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-start align-items-lg-start">
+                        <img class="Logo" src="image-wellness/Footer%20Logo.png" width="200px" />
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <div class="information">
+                            <h1>Information</h1>
+                            <p>About Us</p>
+                            <p>Expert</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <div class="information">
+                            <h1>Contact Us</h1>
+                            <p>
+                                Level 5, Harmony<br />
+                                Wellness Hub, <br />
+                                Jalan Solaris, Kuala<br />
+                                Lumpur, Malaysia
+                            </p>
+                            <p>info@truebalance.com</p>
+                            <p>012-558 9033</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <div class="information">
+                            <h1>Tips</h1>
+                            <p>Wellness Guide</p>
+                            <p>Nutrition</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-9 col-md-8 order-lg-1 order-md-2">
+                        <div class="information">
+                            <div class="message">
+                                <h1>Message us</h1>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label"
+                                        >Let us know your thoughts</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="exampleFormControlInput1"
+                                        placeholder="email@gmail.com" />
+                                </div>
+
+                                <!-- Send Button -->
+                                <div class="send text-end">
+                                    <button type="button" class="btn btn-warning" onclick="sendMsg()">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4 order-lg-2 order-md-1">
+                        <div class="information">
+                            <h1>Follow Us</h1>
+                            <img class="contact-icons" src="image-wellness/Facebook.png" />
+                            <img class="contact-icons" src="image-wellness/Instagram.png" />
+                            <img class="contact-icons" src="image-wellness/WhatsApp.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="wellnessDetail1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="card wellness-detail-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">☀️Morning Routine Tips</h4>
+                            <p>
+                                A mindful morning routine sets the tone for the entire day. Gentle stretching helps wake
+                                up the muscles and improves circulation after hours of inactivity. Drinking water
+                                shortly after waking replenishes hydration levels, supports digestion, and boosts
+                                cognitive clarity. Establishing a calm and intentional start—free from overwhelming
+                                stimuli—helps regulate mood and prepares the body and mind for productivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="energyBoost" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="card wellness-detail-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">⚡️Energy Boosting Habits</h4>
+                            <p>
+                                Sustainable energy does not come from pushing harder, but from managing small moments of
+                                recovery. Incorporating short breaks throughout the day prevents mental fatigue and
+                                improves concentration. Mindful breathing techniques activate the body’s relaxation
+                                response, improving oxygen flow and reducing stress-induced exhaustion. These habits
+                                help maintain consistent energy levels and support long-term well-being.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="mental" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="card wellness-detail-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">🧠Mental Wellness</h4>
+                            <p>
+                                Mental wellness is supported by daily practices that balance emotional resilience and
+                                self-awareness. Simple methods—such as grounding techniques, brief moments of
+                                reflection, or reducing digital overload—help reduce tension during busy periods.
+                                Creating mental space allows individuals to navigate challenges with greater clarity,
+                                improving focus, emotional stability, and overall psychological health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sleep" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="card wellness-detail-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">🌙Sleep Wellness</h4>
+                            <p>
+                                Quality sleep is essential for emotional regulation and cognitive function. Establishing
+                                a sleep-friendly environment—dim lighting, reduced screen exposure, and a consistent
+                                bedtime routine—signals the brain to wind down naturally. This promotes deeper,
+                                restorative rest that supports memory, mood stability, and overall health. Building
+                                healthy nighttime habits helps the mind reset for the next day.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="healthy" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="card wellness-detail-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">🥗Healthy Eating Habits</h4>
+                            <p>
+                                Balanced nutrition plays a crucial role in maintaining physical strength, stable energy
+                                levels, and mental clarity. Structuring meals with a mix of protein, whole grains,
+                                healthy fats, and vegetables helps regulate blood sugar and supports sustained focus.
+                                Mindful eating practices—such as slower bites and recognizing hunger cues—encourage
+                                better digestion and strengthen the relationship between food and well-being.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="hydration" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="card wellness-detail-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">💧Hydration Reminders</h4>
+                            <p>
+                                Water is essential for both physical and mental performance. Proper hydration supports
+                                body temperature regulation, nutrient transport, and joint function. It also influences
+                                concentration, mood, and fatigue levels. Many people experience tiredness or
+                                irritability simply due to dehydration. Regular water intake throughout the day keeps
+                                the mind sharp and the body functioning optimally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+            integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+        <script>
+            function sendMsg() {
+                alert("Message sent!");
+            }
+        </script>
+    </body>
+</html>
